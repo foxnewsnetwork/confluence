@@ -1,0 +1,15 @@
+{
+  "name": "<%= project_name %>",
+  "version": "0.0.1",
+  "description": "WRITE ME",
+  "dependencies": {
+    "jamjs":"0.2.x" ,
+    "coffee-script":"1.4.x"
+  },
+  "jam": {
+    "packageDir": "assets/javascripts",
+    "dependencies": {
+      "jquery": "1.9.x"
+    }
+  }
+}

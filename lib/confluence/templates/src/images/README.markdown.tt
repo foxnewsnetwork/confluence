@@ -1,0 +1,11 @@
+<%= project_name %> Image Assets
+=
+This folder contains all the post-builds of your image assets.
+
+Because it is impossible for a simpleton like me to figure out
+how to wire the billions of different raw image formats into
+browser-understandable things like pngs, jpgs, and whatnot,
+no attempt will be made to do so. However, the the purposes of
+organization, it is in YOUR best interest to save all your raw
+image workspaces (i.e. psd for photoshop) in the src folder
+and save as all your finished junk in here.

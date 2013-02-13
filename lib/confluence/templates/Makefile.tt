@@ -1,0 +1,15 @@
+.PHONY: javascript html stylesheet test
+
+test:
+	@echo 'Not implemented yet'
+	
+javascript:
+	@echo 'Not implemented yet'
+
+html:
+	@echo 'Not implemented yet'
+
+stylesheet:
+	@echo 'Not implemented yet'
+
+

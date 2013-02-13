@@ -1,0 +1,5 @@
+/ Main comment display
+.<%= project_name %>-box
+  %h1= "Success!"
+  %p= "If you're reading this from your browser."
+  %p= "Now replace me with your own views..."

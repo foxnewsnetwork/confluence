@@ -1,0 +1,7 @@
+require 'spec_helper'
+
+describe <%= project_name %> do
+
+  pending "Write some tests here!"
+
+end

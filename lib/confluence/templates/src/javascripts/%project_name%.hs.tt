@@ -1,0 +1,4 @@
+-- Haskell-fay based javascript source code
+
+main :: IO ()
+main = putStrLn "WRITE ME!"
