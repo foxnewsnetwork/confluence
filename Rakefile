@@ -17,8 +17,8 @@ Jeweler::Tasks.new do |gem|
   gem.name = "confluence"
   gem.homepage = "http://github.com/foxnewsnetwork/confluence"
   gem.license = "MIT"
-  gem.summary = %Q{TODO: one-line summary of your gem}
-  gem.description = %Q{TODO: longer description of your gem}
+  gem.summary = %Q{A sloppy blobulization of jeweler with things like integration testing, javascript compiling, etc. that seeks to provide a framework for writing modular web assets}
+  gem.description = %Q{confluence is the merging of rivers. In particular, it is the merging of the fay-haskell-coffee-js river with the scss-css river with the psd-png river into the rails-ruby-haml rivers}
   gem.email = "foxnewsnetwork@gmail.com"
   gem.authors = ["Thomas Chen"]
   # dependencies defined in Gemfile
