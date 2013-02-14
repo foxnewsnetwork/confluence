@@ -5,7 +5,7 @@
 
 Gem::Specification.new do |s|
   s.name = "confluence"
-  s.version = "0.0.0"
+  s.version = "0.0.1"
 
   s.required_rubygems_version = Gem::Requirement.new(">= 0") if s.respond_to? :required_rubygems_version=
   s.authors = ["Thomas Chen"]
@@ -15,7 +15,7 @@ Gem::Specification.new do |s|
   s.executables = ["confluence"]
   s.extra_rdoc_files = [
     "LICENSE.txt",
-    "README.rdoc"
+    "README.markdown"
   ]
   s.files = [
     ".document",
@@ -23,10 +23,11 @@ Gem::Specification.new do |s|
     "Gemfile",
     "Gemfile.lock",
     "LICENSE.txt",
-    "README.rdoc",
+    "README.markdown",
     "Rakefile",
     "VERSION",
     "bin/confluence",
+    "confluence.gemspec",
     "lib/confluence.rb",
     "lib/confluence/navigator.rb",
     "lib/confluence/templates/%project_name%.cabal.tt",
