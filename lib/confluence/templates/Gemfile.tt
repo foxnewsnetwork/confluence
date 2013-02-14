@@ -16,4 +16,5 @@ group :development do
   gem "bundler"
   gem "confluence"
   gem "simplecov"
+  gem "jeweler"
 end
