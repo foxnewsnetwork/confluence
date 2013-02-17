@@ -1,3 +1,3 @@
-Dir[File.join(File.dirname(__FILE__), "<%= project_name %>", "*.rb")].each { |source| require source }
+Dir[File.join(File.dirname(__FILE__), "<%= project_name.underscore %>", "*.rb")].each { |source| require source }
 
-module <%= project_name.capitalize %>; end
+module <%= project_name.camelcase %>; end

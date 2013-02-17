@@ -1,5 +1,6 @@
 require "rubygems"
 require "thor"
+require "active_support/core_ext/string"
 Dir[File.join(File.dirname(__FILE__), "confluence", "*.rb")].each { |source| require source }
 
 module Confluence

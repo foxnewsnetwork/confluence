@@ -1,6 +1,6 @@
 require 'spec_helper'
 
-describe <%= project_name %> do
+describe <%= project_name.camelcase %> do
 
   pending "Write some tests here!"
 
