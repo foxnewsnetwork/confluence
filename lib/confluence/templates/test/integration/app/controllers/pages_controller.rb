@@ -30,6 +30,6 @@ class PagesController < ApplicationController
   end
 
   append_view_path IntegrationsResolver.instance
-
+    expose(:presenter) { <%= project_name.camelcase %>::Presenter.from_nothing %> }
   def index; end
 end

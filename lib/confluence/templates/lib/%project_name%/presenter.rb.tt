@@ -1,0 +1,7 @@
+module <%= project_name.camelcase %>
+  class Presenter < Presentable::Presenter
+    def self.from_nothing
+      throw :NotImplementedError
+    end
+  end
+end
