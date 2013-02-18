@@ -1,0 +1,6 @@
+class HtmlController < ApplicationController
+  append_view_path File.expand_path("../../../../assets", File.dirname(__FILE__))
+  append_view_path File.expand_path("../../../../assets/html", File.dirname(__FILE__))append_view_path
+  expose(:presenter) { <%= project_name.camelcase %>::Presenter.from_nothing %> }
+  def index; end
+end
