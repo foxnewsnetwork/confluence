@@ -52,10 +52,11 @@ pkg
 node_modules
 
 # for jamjs
-jam
+components
 
 # for haskell
 dist
 
 # For integration testing logs
 log
+*.log

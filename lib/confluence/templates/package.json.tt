@@ -4,10 +4,11 @@
   "description": "WRITE ME",
   "dependencies": {
     "jamjs":"0.2.x" ,
+    "bower":"0.7.x" ,
     "coffee-script":"1.4.x"
   },
   "jam": {
-    "packageDir": "assets/javascripts",
+    "packageDir": "components",
     "dependencies": {
       "jquery": "1.9.x"
     }

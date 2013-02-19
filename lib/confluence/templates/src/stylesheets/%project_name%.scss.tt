@@ -1,3 +1,0 @@
-.<%= project_name.dasherize %>-box {
-  font-size: 20px;
-}
