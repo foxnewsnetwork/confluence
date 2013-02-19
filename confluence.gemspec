@@ -5,11 +5,11 @@
 
 Gem::Specification.new do |s|
   s.name = "confluence"
-  s.version = "0.1.1"
+  s.version = "0.2.0"
 
   s.required_rubygems_version = Gem::Requirement.new(">= 0") if s.respond_to? :required_rubygems_version=
   s.authors = ["Thomas Chen"]
-  s.date = "2013-02-18"
+  s.date = "2013-02-19"
   s.description = "confluence is the merging of rivers. In particular, it is the merging of the fay-haskell-coffee-js river with the scss-css river with the psd-png river into the rails-ruby-haml rivers"
   s.email = "foxnewsnetwork@gmail.com"
   s.executables = ["confluence"]
@@ -44,7 +44,10 @@ Gem::Specification.new do |s|
     "lib/confluence/templates/assets/html/_%project_name%.html.haml.tt",
     "lib/confluence/templates/assets/images/README.markdown.tt",
     "lib/confluence/templates/assets/javascripts/README.markdown.tt",
+    "lib/confluence/templates/assets/javascripts/application.js",
     "lib/confluence/templates/assets/stylesheets/README.markdown.tt",
+    "lib/confluence/templates/assets/stylesheets/application.css",
+    "lib/confluence/templates/component.json.tt",
     "lib/confluence/templates/config.ru",
     "lib/confluence/templates/lib/%project_name%.rb.tt",
     "lib/confluence/templates/lib/%project_name%/presenter.rb.tt",
@@ -52,22 +55,11 @@ Gem::Specification.new do |s|
     "lib/confluence/templates/spec/%project_name%_spec.rb.tt",
     "lib/confluence/templates/spec/spec_helper.rb.tt",
     "lib/confluence/templates/src/images/README.markdown.tt",
-    "lib/confluence/templates/src/javascripts/%project_name%.hs.tt",
-    "lib/confluence/templates/src/stylesheets/%project_name%.scss.tt",
     "lib/confluence/templates/test/integration/.gitignore",
     "lib/confluence/templates/test/integration/README.rdoc",
     "lib/confluence/templates/test/integration/Rakefile",
-    "lib/confluence/templates/test/integration/app/assets/images/rails.png",
-    "lib/confluence/templates/test/integration/app/assets/javascripts/application.js",
-    "lib/confluence/templates/test/integration/app/assets/javascripts/pages.js",
-    "lib/confluence/templates/test/integration/app/assets/stylesheets/application.css",
-    "lib/confluence/templates/test/integration/app/assets/stylesheets/pages.css",
     "lib/confluence/templates/test/integration/app/controllers/application_controller.rb",
     "lib/confluence/templates/test/integration/app/controllers/html_controller.rb.tt",
-    "lib/confluence/templates/test/integration/app/helpers/application_helper.rb",
-    "lib/confluence/templates/test/integration/app/helpers/html_helper.rb.tt",
-    "lib/confluence/templates/test/integration/app/mailers/.gitkeep",
-    "lib/confluence/templates/test/integration/app/models/.gitkeep",
     "lib/confluence/templates/test/integration/app/views/html/index.html.haml.tt",
     "lib/confluence/templates/test/integration/app/views/layouts/application.html.erb",
     "lib/confluence/templates/test/integration/config/application.rb",
@@ -84,7 +76,6 @@ Gem::Specification.new do |s|
     "lib/confluence/templates/test/integration/config/initializers/wrap_parameters.rb",
     "lib/confluence/templates/test/integration/config/locales/en.yml",
     "lib/confluence/templates/test/integration/config/routes.rb.tt",
-    "lib/confluence/templates/test/integration/db/seeds.rb",
     "lib/confluence/templates/test/integration/lib/assets/.gitkeep",
     "lib/confluence/templates/test/integration/lib/tasks/.gitkeep",
     "lib/confluence/templates/test/integration/public/404.html",
