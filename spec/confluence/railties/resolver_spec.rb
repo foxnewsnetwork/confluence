@@ -25,6 +25,23 @@ describe Confluence::Railties::Resolver do
 
     end
 
+    describe "#_normalize_details" do
+      let(:get) { lambda { |path, details| resolver.send("_normalize_details",path,details ) } }
+
+      context "expected usage" do
+        let(:details) { {:locale=>[:en], :formats=>[:html], :handlers=>[:erb, :builder, :raw, :ruby, :jbuilder, :coffee, :haml]} }
+        let(:transform) { get.call "dog/cat/bat/bird", details }
+        [:virtual_path, :locale, :formats, :handlers].each do |key|
+          it "should have the #{key} key" do
+            transform.should_not be_empty
+            transform.should have_key key
+            transform[key].should_not be_nil
+            transform[key].should_not be_empty
+          end
+        end
+      end
+    end
+
     describe "#_get_gem_directory" do
       let(:get) { lambda { |parameter| resolver.send("_get_gem_directory", parameter) } }
 

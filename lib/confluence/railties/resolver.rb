@@ -10,14 +10,18 @@ module Confluence
           handler = _get_handler_from_nothing
           source = _get_source_from_path(partial_path)
           identifier = _get_identifier name, prefix
-          _get_templates( source, identifier, handler, details )
-          
+          normalized_details = _normalize_details(partial_path, details)
+          _get_templates( source, identifier, handler, normalized_details )
         else
           []
         end
       end
 
       private
+
+      def _normalize_details( path, details )
+        details.merge( :virtual_path => path )
+      end
 
       def _checks
         @_checks ||= [
