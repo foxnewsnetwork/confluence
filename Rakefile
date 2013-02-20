@@ -18,7 +18,7 @@ Jeweler::Tasks.new do |gem|
   gem.homepage = "http://github.com/foxnewsnetwork/confluence"
   gem.license = "MIT"
   gem.summary = %Q{A sloppy blobulization of jeweler with things like integration testing, javascript compiling, etc. that seeks to provide a framework for writing modular web assets}
-  gem.description = %Q{confluence is the merging of rivers. In particular, it is the merging of the fay-haskell-coffee-js river with the scss-css river with the psd-png river into the rails-ruby-haml rivers}
+  gem.description = %Q{One of the biggest problems facing any ruby (possibly rails) based web dev is the extreme lack of modularization of actual web components. Sure there are plenty of great modularized tools from rails to sprockets to whatever outthere that will help you get build a cool web app, but there is very little in terms of convention to help you build a cool web kit that can be reused anywhere else. Confluence is designed and used (by me) to build highly modular web assets like navigation bars, footers, map views, user profile tabs, etc. so that I never have to build the same again across different application.}
   gem.email = "foxnewsnetwork@gmail.com"
   gem.authors = ["Thomas Chen"]
   # dependencies defined in Gemfile
