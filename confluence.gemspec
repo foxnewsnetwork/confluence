@@ -5,12 +5,12 @@
 
 Gem::Specification.new do |s|
   s.name = "confluence"
-  s.version = "1.0.0"
+  s.version = "1.0.1"
 
   s.required_rubygems_version = Gem::Requirement.new(">= 0") if s.respond_to? :required_rubygems_version=
   s.authors = ["Thomas Chen"]
   s.date = "2013-02-20"
-  s.description = "confluence is the merging of rivers. In particular, it is the merging of the fay-haskell-coffee-js river with the scss-css river with the psd-png river into the rails-ruby-haml rivers"
+  s.description = "One of the biggest problems facing any ruby (possibly rails) based web dev is the extreme lack of modularization of actual web components. Sure there are plenty of great modularized tools from rails to sprockets to whatever outthere that will help you get build a cool web app, but there is very little in terms of convention to help you build a cool web kit that can be reused anywhere else. Confluence is designed and used (by me) to build highly modular web assets like navigation bars, footers, map views, user profile tabs, etc. so that I never have to build the same again across different application."
   s.email = "foxnewsnetwork@gmail.com"
   s.executables = ["confluence"]
   s.extra_rdoc_files = [
