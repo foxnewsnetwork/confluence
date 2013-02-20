@@ -5,11 +5,11 @@
 
 Gem::Specification.new do |s|
   s.name = "confluence"
-  s.version = "0.2.0"
+  s.version = "1.0.0"
 
   s.required_rubygems_version = Gem::Requirement.new(">= 0") if s.respond_to? :required_rubygems_version=
   s.authors = ["Thomas Chen"]
-  s.date = "2013-02-19"
+  s.date = "2013-02-20"
   s.description = "confluence is the merging of rivers. In particular, it is the merging of the fay-haskell-coffee-js river with the scss-css river with the psd-png river into the rails-ruby-haml rivers"
   s.email = "foxnewsnetwork@gmail.com"
   s.executables = ["confluence"]
@@ -29,7 +29,8 @@ Gem::Specification.new do |s|
     "bin/confluence",
     "confluence.gemspec",
     "lib/confluence.rb",
-    "lib/confluence/navigator.rb",
+    "lib/confluence/railtie.rb",
+    "lib/confluence/railties/resolver.rb",
     "lib/confluence/templates/%project_name%.cabal.tt",
     "lib/confluence/templates/.document",
     "lib/confluence/templates/.gitignore",
@@ -88,10 +89,49 @@ Gem::Specification.new do |s|
     "lib/confluence/templates/test/integration/vendor/assets/stylesheets/.gitkeep",
     "lib/confluence/templates/test/integration/vendor/plugins/.gitkeep",
     "lib/confluence/templates/test/javascripts/README.markdown.tt",
-    "spec/confluence/navigator_spec.rb",
+    "spec/confluence/railtie_spec.rb",
+    "spec/confluence/railties/resolver_spec.rb",
+    "spec/confluence/welcome_controller_spec.rb",
     "spec/confluence_spec.rb",
-    "spec/spec_helper.rb",
-    "spec/support/file_sytem/navigator.rb"
+    "spec/fixture/.gitignore",
+    "spec/fixture/README.rdoc",
+    "spec/fixture/Rakefile",
+    "spec/fixture/app/assets/images/rails.png",
+    "spec/fixture/app/assets/javascripts/application.js",
+    "spec/fixture/app/assets/stylesheets/application.css",
+    "spec/fixture/app/controllers/application_controller.rb",
+    "spec/fixture/app/controllers/welcome_controller.rb",
+    "spec/fixture/app/views/layouts/application.html.erb",
+    "spec/fixture/app/views/welcome/index.html.haml",
+    "spec/fixture/config.ru",
+    "spec/fixture/config/application.rb",
+    "spec/fixture/config/boot.rb",
+    "spec/fixture/config/environment.rb",
+    "spec/fixture/config/environments/development.rb",
+    "spec/fixture/config/environments/production.rb",
+    "spec/fixture/config/environments/test.rb",
+    "spec/fixture/config/initializers/backtrace_silencers.rb",
+    "spec/fixture/config/initializers/inflections.rb",
+    "spec/fixture/config/initializers/mime_types.rb",
+    "spec/fixture/config/initializers/secret_token.rb",
+    "spec/fixture/config/initializers/session_store.rb",
+    "spec/fixture/config/initializers/wrap_parameters.rb",
+    "spec/fixture/config/locales/en.yml",
+    "spec/fixture/config/routes.rb",
+    "spec/fixture/lib/assets/.gitkeep",
+    "spec/fixture/lib/tasks/.gitkeep",
+    "spec/fixture/log/.gitkeep",
+    "spec/fixture/public/404.html",
+    "spec/fixture/public/422.html",
+    "spec/fixture/public/500.html",
+    "spec/fixture/public/favicon.ico",
+    "spec/fixture/public/index.html",
+    "spec/fixture/public/robots.txt",
+    "spec/fixture/script/rails",
+    "spec/fixture/vendor/assets/javascripts/.gitkeep",
+    "spec/fixture/vendor/assets/stylesheets/.gitkeep",
+    "spec/fixture/vendor/plugins/.gitkeep",
+    "spec/spec_helper.rb"
   ]
   s.homepage = "http://github.com/foxnewsnetwork/confluence"
   s.licenses = ["MIT"]
@@ -110,7 +150,13 @@ Gem::Specification.new do |s|
       s.add_runtime_dependency(%q<rspec>, [">= 0"])
       s.add_runtime_dependency(%q<thor>, [">= 0"])
       s.add_runtime_dependency(%q<activesupport>, [">= 0"])
+      s.add_runtime_dependency(%q<git>, [">= 0"])
       s.add_development_dependency(%q<jeweler>, ["~> 1.8.4"])
+      s.add_development_dependency(%q<rails>, [">= 0"])
+      s.add_development_dependency(%q<haml>, [">= 0"])
+      s.add_development_dependency(%q<rspec>, [">= 0"])
+      s.add_development_dependency(%q<rspec-rails>, [">= 0"])
+      s.add_development_dependency(%q<header_navigation>, ["~> 0.0.1"])
     else
       s.add_dependency(%q<rake>, [">= 0"])
       s.add_dependency(%q<bundler>, [">= 0"])
@@ -119,7 +165,13 @@ Gem::Specification.new do |s|
       s.add_dependency(%q<rspec>, [">= 0"])
       s.add_dependency(%q<thor>, [">= 0"])
       s.add_dependency(%q<activesupport>, [">= 0"])
+      s.add_dependency(%q<git>, [">= 0"])
       s.add_dependency(%q<jeweler>, ["~> 1.8.4"])
+      s.add_dependency(%q<rails>, [">= 0"])
+      s.add_dependency(%q<haml>, [">= 0"])
+      s.add_dependency(%q<rspec>, [">= 0"])
+      s.add_dependency(%q<rspec-rails>, [">= 0"])
+      s.add_dependency(%q<header_navigation>, ["~> 0.0.1"])
     end
   else
     s.add_dependency(%q<rake>, [">= 0"])
@@ -129,7 +181,13 @@ Gem::Specification.new do |s|
     s.add_dependency(%q<rspec>, [">= 0"])
     s.add_dependency(%q<thor>, [">= 0"])
     s.add_dependency(%q<activesupport>, [">= 0"])
+    s.add_dependency(%q<git>, [">= 0"])
     s.add_dependency(%q<jeweler>, ["~> 1.8.4"])
+    s.add_dependency(%q<rails>, [">= 0"])
+    s.add_dependency(%q<haml>, [">= 0"])
+    s.add_dependency(%q<rspec>, [">= 0"])
+    s.add_dependency(%q<rspec-rails>, [">= 0"])
+    s.add_dependency(%q<header_navigation>, ["~> 0.0.1"])
   end
 end
 
