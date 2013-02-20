@@ -19,7 +19,7 @@ synopsis:            WRITE ME!
 -- description:      WRITE ME
 
 -- URL for the project homepage or repository.
-homepage:            WRITE ME
+homepage:            https://github.com/<%= project_github_user %>/<%= project_name %>
 
 -- The license under which the package is released.
 license:             MIT
@@ -28,11 +28,11 @@ license:             MIT
 license-file:        LICENSE.txt
 
 -- The package author(s).
-author:              WRITE ME
+author:              <%= project_author %>
 
 -- An email address to which users can send suggestions, bug reports, and 
 -- patches.
-maintainer:          WRITE ME
+maintainer:          <%= project_author %>
 
 -- A copyright notice.
 -- copyright:           
@@ -60,5 +60,5 @@ library
 
   
   -- Directories containing source files.
-  hs-source-dirs:      src/javascripts
+  hs-source-dirs:      assets/javascripts
   

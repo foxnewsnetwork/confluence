@@ -10,10 +10,16 @@ gem "simplecov"
 gem "rspec"
 gem "thor"
 gem "activesupport"
+gem "git"
 # Add dependencies to develop your gem here.
 # Include everything needed to run rake, tests, features, etc.
 group :development do
   gem "jeweler", "~> 1.8.4"
+  gem "rails"
+  gem "haml"
+  gem "rspec"
+  gem "rspec-rails"
+  gem "header_navigation", "~>0.0.1" # used only in the spec files
 end
 
 group :debug do
